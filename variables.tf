@@ -54,7 +54,7 @@ variable "cluster_name" {
 variable "cluster_namespace" {
   type        = string
   description = "Name of the kubernetes cluster where the application will be deployed."
-  default     = "prod"
+  default     = "prod-ns"
 }
 
 variable "cluster_region" {
@@ -103,4 +103,10 @@ variable "tekton_tasks_catalog_repo" {
   type        = string
   description = "Repository url for the repository containing commonly used tekton tasks."
   default     = "https://us-south.git.cloud.ibm.com/open-toolchain/tekton-catalog.git"
+}
+
+variable "some_new_option" {
+  type        = string
+  description = "Some new option"
+  default     = "some-new-option-value-a"
 }
