@@ -54,7 +54,7 @@ variable "cluster_name" {
 variable "cluster_namespace" {
   type        = string
   description = "Name of the kubernetes cluster where the application will be deployed."
-  default     = "prod-ns-c"
+  default     = "prod-ns-d"
 }
 
 variable "cluster_region" {
